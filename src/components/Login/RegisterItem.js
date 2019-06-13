@@ -53,9 +53,9 @@ class RegisterItem extends React.Component {
         console.log(registerState)
 
         // 暂时
-        // if (registerState === 1) {
-        //     this.props.history.push('/login')
-        // }
+        if (registerState === 1) {
+            this.props.history.push('/login')
+        }
 
 
         const { getFieldDecorator } = this.props.form

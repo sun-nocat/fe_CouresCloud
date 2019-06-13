@@ -103,7 +103,7 @@ class LoginItem extends React.Component {
 						<Radio.Group onChange={this.onChange} value={this.state.value}>
 							<Radio value={'student'}>学生</Radio>
 							<Radio value={'teacher'}>教师</Radio>
-							<Radio value={'admin'}>管理员</Radio>
+							{/* <Radio value={'admin'}>管理员</Radio> */}
 
 						</Radio.Group>
 					</Form.Item>

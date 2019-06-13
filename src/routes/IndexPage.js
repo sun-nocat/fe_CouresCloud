@@ -1,5 +1,12 @@
 import React from "react";
 import { connect } from "dva";
+
+import Img1 from './img/1.png' 
+import Img2 from './img/2.png' 
+
+import Img3 from './img/3.png' 
+import Img4 from './img/4.png' 
+
 import {
   Button,
   Card,
@@ -107,7 +114,7 @@ function IndexPage(props) {
           </div>
         )}
 
-        <div style={{marginTop:'5%'}}>
+        <div style={{marginTop:'8%'}}>
           <Link to="/course">
             <Button onClick={onClose} type="primary" block>
               课程
@@ -115,7 +122,7 @@ function IndexPage(props) {
           </Link>
         </div>
 
-        <div style={{marginTop:'5%'}}>
+        <div style={{marginTop:'8%'}}>
           <Link to="/sigin">
             <Button onClick={onClose} type="primary" block>
               签到
@@ -123,7 +130,7 @@ function IndexPage(props) {
           </Link>
         </div>
 
-        <div style={{marginTop:'5%'}}>
+        <div style={{marginTop:'8%'}}>
           <Link to="/leave">
             <Button onClick={onClose} type="primary" block>
               请假
@@ -131,7 +138,7 @@ function IndexPage(props) {
           </Link>
         </div>
 
-        <div style={{marginTop:'5%'}}>
+        <div style={{marginTop:'8%'}}>
           <Link to="/edit">
             <Button onClick={onClose} type="primary" block>
               个人信息修改
@@ -147,17 +154,31 @@ function IndexPage(props) {
 <div style={{textAlign:'center'}}>
 <Carousel autoplay style={{textAlign:'center'}}>
     <div style={{textAlign:'center'}}>
-      <h3>本周学习时长</h3>
-    <Progress percent={50} showInfo={false} />
+      {/* <h3>本周学习时长</h3> */}
+    {/* <Progress percent={50} showInfo={false} /> */}
+    <img src={Img1} style={{width:"100%"}} />>
     </div>
     <div style={{textAlign:'center'}}>
-      <h3>今日已登录</h3>
-      <Progress type="circle" percent={100} />
+      {/* <h3>今日已登录</h3> */}
+      {/* <Progress type="circle" percent={100} /> */}
+      <img src={Img2} style={{width:"100%"}}  />>
+
     </div>
     <div style={{textAlign:'center'}}>
-      <h3>期待您的5星好评</h3>
+      {/* <h3>期待您的5星好评</h3> */}
       <span>
-      <Rate disabled defaultValue={5} />
+      {/* <Rate disabled defaultValue={5} /> */}
+      <img src={Img3} style={{width:"100%"}}  />>
+
+      </span>
+    </div>
+
+        <div style={{textAlign:'center'}}>
+      {/* <h3>期待您的5星好评</h3> */}
+      <span>
+      {/* <Rate disabled defaultValue={5} /> */}
+      <img src={Img4} style={{width:"100%"}}  />>
+
       </span>
     </div>
   </Carousel>
